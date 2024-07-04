@@ -1,0 +1,17 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  font-family: $font-family;
+  &.bg--primary {
+    @extend .btn;
+    background-color: $clr-primary;
+    color: $clr-light;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}

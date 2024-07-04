@@ -1,0 +1,27 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.tns-outer {
+  overflow: hidden;
+  max-width: 100%;
+  & > button {
+    display: none;
+  }
+}
+
+.tns-nav {
+  position: absolute;
+  top: 35rem;
+  left: 75rem;
+  text-align: center;
+  button {
+    margin: 2rem 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: none;
+  }
+  &-active {
+    background-color: $clr-dark;
+  }
+}

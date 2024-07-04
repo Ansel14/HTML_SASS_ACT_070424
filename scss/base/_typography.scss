@@ -1,0 +1,28 @@
+@use "../abstract/" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+$font-family: "Ubuntu", sans-serif;
+$font-family-condensed: "Ubuntu Condensed", Arial, sans-serif;
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $clr-light;
+  margin-bottom: 2rem;
+}
+
+p {
+  color: $clr-light;
+  // font-size: clamp(1.5rem, 5vw, 2rem);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
