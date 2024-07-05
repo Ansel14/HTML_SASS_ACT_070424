@@ -1,27 +1,56 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
-.tns-outer {
-  overflow: hidden;
-  max-width: 100%;
-  & > button {
-    display: none;
+.homeBanner__wrapper {
+  .tns-outer {
+    overflow: hidden;
+    max-width: 100%;
+    & > button {
+      display: none;
+    }
+  }
+
+  .tns-nav {
+    position: absolute;
+    top: 60%;
+    left: 68%;
+    text-align: center;
+    button {
+      margin: 2rem 0.5rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      border: none;
+    }
+    &-active {
+      background-color: $clr-dark;
+    }
   }
 }
 
-.tns-nav {
-  position: absolute;
-  top: 35rem;
-  left: 75rem;
-  text-align: center;
-  button {
-    margin: 2rem 0.5rem;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    border: none;
+.services__wrapper {
+  .tns-outer{
+    overflow: hidden;
+    max-width: 80%;
+    & > button {
+      display: none;
+    }
   }
-  &-active {
-    background-color: $clr-dark;
+
+  .tns-nav{
+    position: absolute;
+    top: 152%;
+    left: 75%;
+    text-align: center;
+    button {
+      margin: 2rem 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      border: none;
+    }
+    &-active {
+      background-color: $clr-dark;
+    }
   }
 }

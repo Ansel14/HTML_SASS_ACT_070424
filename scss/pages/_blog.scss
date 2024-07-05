@@ -1,0 +1,47 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.blog {
+  &__title {
+    padding: 5rem 0 0 8rem;
+    h2 {
+      border-bottom: 1px solid $clr-light-gray;
+    }
+  }
+  &__wrapper {
+    padding: 2rem 0 6rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  &__card {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $clr-light-gray;
+    &--date {
+      @include centerAll;
+      flex-direction: column;
+      p {
+        font-family: $font-primary-condensed;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        &:first-child {
+          font-size: 5rem;
+        }
+      }
+    }
+    &--details {
+      max-width: 35rem;
+      h4 {
+        font-family: $font-primary-condensed;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 2.6rem;
+      }
+    }
+  }
+}

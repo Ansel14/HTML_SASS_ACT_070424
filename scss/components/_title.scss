@@ -1,0 +1,9 @@
+@use "../base/" as *;
+
+.title {
+  font-size: 3rem;
+  width: 95%;
+  padding-bottom: 1rem;
+  font-weight: 300;
+  font-family: $font-primary-condensed;
+}

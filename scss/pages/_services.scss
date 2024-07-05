@@ -1,0 +1,48 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+// SERVICES REPORT
+.servicesReport {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  &__report {
+    padding: 5rem 0 7rem 8rem;
+    max-width: 33rem;
+    h2 {
+      color: $clr-dark;
+      border-bottom: 1px solid $clr-gray-border;
+    }
+    a {
+      color: $clr-primary;
+      font-size: .9rem;
+      &:hover {
+        color: $clr-dark;
+        transition: 0.5s;
+      }
+    }
+    p {
+        padding-top: 2rem;
+      color: $clr-dark;
+    }
+  }
+  &__list{
+    padding: 5rem 8rem 0 0;
+    h2{
+        color: $clr-dark;
+        border-bottom: 1px solid $clr-gray-border;
+    }
+    p{
+        padding-top: 2rem;
+        color: $clr-dark;
+    }
+    &--wrapper{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+  }
+}

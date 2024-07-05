@@ -8,3 +8,12 @@ var slider = tns({
   axis: "vertical",
   controls: false,
 });
+
+var slider = tns({
+  container: ".services__slider",
+  items: 3,
+  navPosition: "bottom",
+  controls: false,
+  swipeAngle: false,
+  speed: 400,
+});
