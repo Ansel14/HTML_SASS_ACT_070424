@@ -17,3 +17,12 @@ var slider = tns({
   swipeAngle: false,
   speed: 400,
 });
+
+var slider = tns({
+  container: ".servicesBanner__slider",
+  items: 3,
+  navPosition: "bottom",
+  controls: false,
+  swipeAngle: false,
+  speed: 400,
+});

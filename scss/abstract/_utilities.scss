@@ -8,6 +8,7 @@ $colors: (
   "lightGray": $clr-light-gray,
   "lightPrimary": $clr-light-primary,
   "grayBorder": $clr-gray-border,
+  "darkGray": $clr-dark-gray,
 );
 
 @each $key, $val in $colors {

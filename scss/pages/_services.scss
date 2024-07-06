@@ -1,9 +1,51 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
+// SERVICES BANNER
+.servicesBanner {
+  &__title {
+    padding: 5rem 0 0 8rem;
+    h2 {
+      border-bottom: 1px solid $clr-light-gray;
+    }
+  }
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+  }
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__card {
+    a:nth-child(2) {
+      font-size: 0.8rem;
+      color: $clr-primary;
+    }
+    p{
+      font-size: .9rem;
+      a{
+        color: $clr-light;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 // SERVICES REPORT
 .servicesReport {
   &__wrapper {
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -17,32 +59,32 @@
     }
     a {
       color: $clr-primary;
-      font-size: .9rem;
+      font-size: 0.9rem;
       &:hover {
         color: $clr-dark;
         transition: 0.5s;
       }
     }
     p {
-        padding-top: 2rem;
+      padding-top: 2rem;
       color: $clr-dark;
     }
   }
-  &__list{
+  &__list {
     padding: 5rem 8rem 0 0;
-    h2{
-        color: $clr-dark;
-        border-bottom: 1px solid $clr-gray-border;
+    h2 {
+      color: $clr-dark;
+      border-bottom: 1px solid $clr-gray-border;
     }
-    p{
-        padding-top: 2rem;
-        color: $clr-dark;
+    p {
+      padding-top: 2rem;
+      color: $clr-dark;
     }
-    &--wrapper{
-        padding-top: 2rem;
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
+    &--wrapper {
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
     }
   }
 }

@@ -29,7 +29,7 @@
 }
 
 .services__wrapper {
-  .tns-outer{
+  .tns-outer {
     overflow: hidden;
     max-width: 80%;
     & > button {
@@ -37,10 +37,10 @@
     }
   }
 
-  .tns-nav{
+  .tns-nav {
     position: absolute;
-    top: 152%;
-    left: 75%;
+    bottom: 108%;
+    left: 82%;
     text-align: center;
     button {
       margin: 2rem 0.5rem;
@@ -52,5 +52,19 @@
     &-active {
       background-color: $clr-dark;
     }
+  }
+}
+
+.servicesBanner__wrapper {
+  .tns-outer {
+    overflow: hidden;
+    max-width: 80%;
+    & > button {
+      display: none;
+    }
+  }
+
+  .tns-nav {
+    position: absolute;
   }
 }

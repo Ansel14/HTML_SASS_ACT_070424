@@ -56,14 +56,6 @@
   background-color: #d9d9db;
 }
 
-.text--darkGray {
-  color: #303033;
-}
-
-.bg--darkGray {
-  background-color: #303033;
-}
-
 .t-align--center {
   text-align: center;
 }
@@ -1048,8 +1040,8 @@ img {
 }
 .services__wrapper .tns-nav {
   position: absolute;
-  bottom: 108%;
-  left: 82%;
+  top: 140%;
+  left: 75%;
   text-align: center;
 }
 .services__wrapper .tns-nav button {
@@ -1061,17 +1053,6 @@ img {
 }
 .services__wrapper .tns-nav-active {
   background-color: #252429;
-}
-
-.servicesBanner__wrapper .tns-outer {
-  overflow: hidden;
-  max-width: 80%;
-}
-.servicesBanner__wrapper .tns-outer > button {
-  display: none;
-}
-.servicesBanner__wrapper .tns-nav {
-  position: absolute;
 }
 
 .footer__wrapper {
@@ -1391,8 +1372,6 @@ img {
   justify-content: center;
 }
 .homeServices__card {
-  z-index: 1;
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -1413,31 +1392,12 @@ img {
 .homeServices__card a {
   font-family: "Ubuntu Condensed", sans-serif;
 }
-.homeServices__card:hover span {
-  opacity: 1;
-  transform: scale(1.1, 1.2);
-  transition: 0.5s ease;
-}
-.homeServices__card:hover i {
-  color: rgb(250, 85, 93);
-  transition: 0.5s ease;
-}
-.homeServices__card:hover a {
-  color: #252429;
-  background-color: #fcfaf2;
-  transition: 0.5s ease;
-}
 .homeServices__hover {
-  z-index: -10;
-  opacity: 0;
+  z-index: 9999;
   position: absolute;
-  width: auto;
-  height: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: #303033;
+  width: 20rem;
+  height: 30rem;
+  background-color: #252429;
 }
 
 .services__title {
@@ -1451,7 +1411,6 @@ img {
   font-family: "Ubuntu Condensed", sans-serif;
 }
 .services__wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1509,44 +1468,7 @@ img {
   color: #fcfaf2;
 }
 
-.servicesBanner__title {
-  padding: 5rem 0 0 8rem;
-}
-.servicesBanner__title h2 {
-  border-bottom: 1px solid #3e3e42;
-}
-.servicesBanner__wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 4rem;
-}
-.servicesBanner__slider {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 2rem;
-}
-.servicesBanner__section {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.servicesBanner__card a:nth-child(2) {
-  font-size: 0.8rem;
-  color: rgb(250, 85, 93);
-}
-.servicesBanner__card p {
-  font-size: 0.9rem;
-}
-.servicesBanner__card p a {
-  color: #fcfaf2;
-  text-decoration: underline;
-}
-
 .servicesReport__wrapper {
-  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -1587,4 +1509,4 @@ img {
   display: flex;
   flex-direction: row;
   gap: 3rem;
-}/*# sourceMappingURL=main.min.css.map */
+}/*# sourceMappingURL=main.css.map */
