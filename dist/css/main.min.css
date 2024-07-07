@@ -1073,6 +1073,22 @@ img {
 .servicesBanner__wrapper .tns-nav {
   position: absolute;
 }
+.servicesBanner__wrapper .tns-nav button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+}
+.servicesBanner__wrapper .tns-nav-active {
+  background-color: #252429;
+}
+
+.divider {
+  margin: 1.5rem 0;
+  width: 100%;
+  height: 0.2px;
+  background-color: #d9d9db;
+}
 
 .footer__wrapper {
   display: flex;
@@ -1521,12 +1537,11 @@ img {
   flex-direction: column;
   align-items: center;
   padding-bottom: 4rem;
+  padding: 0 8rem;
 }
 .servicesBanner__slider {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 2rem;
 }
 .servicesBanner__section {
   display: flex;
@@ -1587,4 +1602,48 @@ img {
   display: flex;
   flex-direction: row;
   gap: 3rem;
+}
+.servicesReport__list--column ul li a {
+  color: #252429;
+}
+
+.privacyPolicy {
+  padding-bottom: 2rem;
+}
+.privacyPolicy__wrapper {
+  padding: 5rem 8rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.privacyPolicy__wrapper h2,
+.privacyPolicy__wrapper p {
+  color: #252429;
+}
+.privacyPolicy__wrapper h2 {
+  border-bottom: 1px solid #d9d9db;
+  margin-bottom: 3rem;
+}
+.privacyPolicy__terms p {
+  max-width: 90rem;
+  font-weight: 300;
+}
+.privacyPolicy__policy a {
+  color: rgb(250, 85, 93);
+  font-size: 0.8rem;
+}
+.privacyPolicy__policy a:hover {
+  color: #252429;
+  transition: 0.5s ease;
+}
+.privacyPolicy__policy p {
+  padding-top: 0.5rem;
+  font-weight: 300;
+}
+.privacyPolicy__policy p a:nth-child(3) {
+  color: #252429;
+}
+.privacyPolicy__policy p a:nth-child(3):hover {
+  color: rgb(250, 85, 93);
+  transition: 0.5s ease;
 }/*# sourceMappingURL=main.min.css.map */
