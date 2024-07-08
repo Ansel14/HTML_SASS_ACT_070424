@@ -16,7 +16,7 @@
     left: 68%;
     text-align: center;
     button {
-      margin: 2rem 0.5rem;
+      margin: 2rem 0.2rem;
       width: 1rem;
       height: 1rem;
       border-radius: 50%;
@@ -36,21 +36,33 @@
       display: none;
     }
   }
-
   .tns-nav {
-    position: absolute;
-    bottom: 108%;
-    left: 82%;
-    text-align: center;
     button {
-      margin: 2rem 0.5rem;
-      width: 2rem;
-      height: 2rem;
-      border-radius: 50%;
-      border: none;
+      display: none;
     }
-    &-active {
+  }
+  #controls {
+    position: absolute;
+    bottom: 115%;
+    left: 85%;
+  }
+  .prev {
+    font-size: 1.5rem;
+    position: relative;
+    color: $clr-primary;
+    border: 2px solid $clr-light;
+    border-radius: 50%;
+    background-color: $clr-light;
+    padding: 0.2rem 0.3rem;
+    &:hover {
+      border: 2px solid $clr-dark;
       background-color: $clr-dark;
+    }
+  }
+  .next {
+    @extend .prev;
+    &:hover {
+      color: $clr-primary;
     }
   }
 }
@@ -58,22 +70,42 @@
 .servicesBanner__wrapper {
   .tns-outer {
     overflow: hidden;
-    max-width: 80%;
+    max-width: 100%;
     & > button {
       display: none;
     }
   }
 
   .tns-nav {
-    position: absolute;
     button {
-      width: 2rem;
-      height: 2rem;
-      border-radius: 50%;
-      border: none;
+      display: none;
     }
-    &-active {
+  }
+  #services__controls {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: absolute;
+    bottom: 105%;
+    left: 84%;
+  }
+  .services__prev {
+    font-size: 1.5rem;
+    position: relative;
+    color: $clr-primary;
+    border: 2px solid $clr-light;
+    border-radius: 50%;
+    background-color: $clr-light;
+    padding: 0.1rem 0.3rem;
+    &:hover {
+      border: 2px solid $clr-dark;
       background-color: $clr-dark;
+    }
+  }
+  .services__next {
+    @extend .services__prev;
+    &:hover {
+      color: $clr-primary;
     }
   }
 }

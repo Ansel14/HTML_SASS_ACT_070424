@@ -12,20 +12,11 @@ let slider1 = tns({
 let slider2 = tns({
   container: ".services__slider",
   items: 3,
-  navPosition: "bottom",
-  controls: false,
-  swipeAngle: false,
-  speed: 400,
-});
-
-let slider3 = tns({
-  container: ".servicesBanner__slider",
-  mode: "carousel",
-  items: 3,
-  gutter: 10,
-  nav: true,
-  navPosition: "bottom",
-  // controls: false,
-  swipeAngle: false,
+  controlsPosition: "bottom",
+  gutter: 30,
+  controls: true,
+  controlsContainer: "#controls",
+  prevButton: ".prev",
+  nextButton: ".next",
   speed: 400,
 });

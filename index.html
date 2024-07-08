@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Services</title>
+    <link rel="icon" href="./img/home/logo.png" />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
     <link
       rel="stylesheet"
@@ -25,7 +26,11 @@
             <img src="./img/home/logo.png" alt="" />
           </div>
           <nav>
-            <ul class="header__nav">
+            <ul
+              class="header__nav"
+              data-aos="fade-down"
+              data-aos-duration="1300"
+            >
               <li><a href="./index.html" class="active">HOME</a></li>
               <li><a href="./about.html">ABOUT</a></li>
               <li><a href="./services.html">SERVICES</a></li>
@@ -38,7 +43,7 @@
     </header>
 
     <!-- HOME BANNER -->
-    <section class="homeBanner">
+    <section class="homeBanner pb--1">
       <div class="container">
         <div class="homeBanner__wrapper">
           <div class="homeBanner__slider">
@@ -80,7 +85,7 @@
               Aspernatur, autem nisi. Itaque dolor unde quo, est nisi fuga
               quisquam eum?
             </p>
-            <a href="" class="btn bg--primary">MORE</a>
+            <a class="btn bg--primary">MORE</a>
             <span class="homeServices__hover"></span>
           </div>
           <div class="homeServices__card">
@@ -91,7 +96,7 @@
               Aspernatur, autem nisi. Itaque dolor unde quo, est nisi fuga
               quisquam eum?
             </p>
-            <a href="" class="btn bg--primary">MORE</a>
+            <a class="btn bg--primary">MORE</a>
             <span class="homeServices__hover"></span>
           </div>
           <div class="homeServices__card">
@@ -102,7 +107,7 @@
               Aspernatur, autem nisi. Itaque dolor unde quo, est nisi fuga
               quisquam eum?
             </p>
-            <a href="" class="btn bg--primary">MORE</a>
+            <a class="btn bg--primary">MORE</a>
             <span class="homeServices__hover"></span>
           </div>
           <div class="homeServices__card">
@@ -113,7 +118,7 @@
               Aspernatur, autem nisi. Itaque dolor unde quo, est nisi fuga
               quisquam eum?
             </p>
-            <a href="" class="btn bg--primary">MORE</a>
+            <a class="btn bg--primary">MORE</a>
             <span class="homeServices__hover"></span>
           </div>
         </div>
@@ -177,12 +182,16 @@
               </p>
             </div>
           </div>
+          <div class="services__controls" id="controls">
+            <a class="prev">←</a>
+            <a class="next">→</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- WHAT WE DO -->
-    <section class="homeAbout">
+    <section class="homeAbout py--1">
       <div class="container">
         <div class="homeAbout__wrapper bg--light">
           <div class="homeAbout__wrapper--text">
@@ -194,7 +203,8 @@
               sit amet coectetuer adipiscing elit. Pellentesque sed dololiquam
               cong.
             </p>
-            <p class="noBorder">
+            <div class="divider__dark"></div>
+            <p>
               Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel
               ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia
               esroin dictum elemenelit. Fusce euismod consequat antrem ipsm door
@@ -210,12 +220,14 @@
               sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper
               u et felisestiulis lacinia est.
             </p>
+            <div class="divider__dark"></div>
             <p>
               Proin dictum elemum veliterdpibus sceleue vitaepeecon eonec in vel
               ipsum auctorulv inaroin ullamcorper u et felisestiulis lacinia
               eroin dictum elemenelit.
             </p>
-            <p class="noBorder">
+            <div class="divider__dark"></div>
+            <p>
               Proin dictum elemenelit. Fusce euismod consequat antrem ipsm door
               sit amet con sectetuer adipiscing elit. Pellentesque sed
               dololiquam cong.
@@ -226,7 +238,7 @@
     </section>
 
     <!-- CTA -->
-    <section class="cta py--1">
+    <section class="cta pt--1">
       <div class="container">
         <div class="cta__wrapper bg--lightGray">
           <h2>NO BETTER CAR SERVICE ANYWHERE</h2>
@@ -237,11 +249,13 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer py--1">
+    <footer class="footer py--2">
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__social">
-            <h4>Car service © 2024 • <a href="./privacy.html">Privacy Policy</a></h4>
+            <h4>
+              Car service © 2024 • <a href="./privacy.html">Privacy Policy</a>
+            </h4>
             <ul class="footer__social--icons">
               <li>
                 <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
@@ -282,12 +296,14 @@
       </div>
     </footer>
 
+    <a href="#" class="backToTop"><i class="fa-solid fa-chevron-up"></i></a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/slider.js"></script>
-    <!-- <script src="./js/toggleMenu.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
+  <script>
+    AOS.init({
+      startEvent: "load",
+    });
+  </script>
 </html>

@@ -1,8 +1,22 @@
 @use "../abstract/" as *;
 
-.divider {
+.divider__gray {
   margin: 1.5rem 0;
   width: 100%;
   height: 0.2px;
   background-color: $clr-gray-border;
+}
+
+.divider__light-gray {
+  margin: 1rem 0;
+  width: 100%;
+  height: 0.3px;
+  background-color: $clr-light-gray;
+}
+
+.divider__dark {
+  margin: 1.5rem 0;
+  width: 100%;
+  height: 0.2px;
+  background-color: $clr-dark;
 }

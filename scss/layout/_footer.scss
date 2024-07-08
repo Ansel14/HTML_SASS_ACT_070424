@@ -11,13 +11,13 @@
   }
   &__social {
     h4 {
-      color: $clr-light-gray;
+      color: $clr-footer-gray;
       font-size: 0.8rem;
       max-width: 15rem;
       margin-bottom: 3rem;
       font-weight: 400;
       a {
-        color: $clr-light-gray;
+        color: $clr-footer-gray;
         &:hover {
           color: $clr-primary;
           transition: 0.5s;
@@ -46,11 +46,32 @@
   }
   &__address {
     h4 {
-      color: $clr-light-gray;
+      color: $clr-footer-gray;
       font-size: 0.8rem;
       font-weight: 400;
       max-width: 15rem;
       margin-bottom: 3rem;
+    }
+  }
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 10rem;
+  z-index: 9999;
+  i {
+    color: $clr-light;
+    border: 2px solid $clr-light;
+    border-radius: 50%;
+    font-size: 1rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.9rem 0 0 0.9rem;
+    &:hover {
+      background-color: $clr-primary;
+      border: 2px solid $clr-primary;
+      transition: 0.5s ease;
     }
   }
 }

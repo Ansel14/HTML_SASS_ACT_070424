@@ -4,7 +4,7 @@
 // features
 .features {
   &__title {
-    padding: 5rem 0 0 8rem;
+    padding: 5rem 8rem 0 8rem;
     h2 {
       border-bottom: 2px solid $clr-light-gray;
     }
@@ -27,7 +27,7 @@
     p {
       max-width: 17rem;
       font-size: 0.9rem;
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
       line-height: 1.5rem;
     }
   }
@@ -63,7 +63,6 @@
 
 // TEAM
 .team {
-    margin-bottom: 2rem;
   &__title {
     padding: 5rem 8rem 0 8rem;
     h2 {
